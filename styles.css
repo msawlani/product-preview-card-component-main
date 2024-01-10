@@ -1,0 +1,111 @@
+:root {
+  --white: #ffffff;
+  --darkgrey: #747682;
+  --mediumlightgrey: #707176;
+  --green: #3d8168;
+  --darkgreen: #264f40;
+  --black: #000000;
+  --bluishblack: #242a31;
+  --cream: #f2e9e2;
+}
+
+@media screen and (max-width: 767px) {
+  #item {
+    content: url("/images/image-product-mobile.jpg");
+  }
+  .perfume-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .full-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.perfume-img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  padding: 15px 28px;
+  background-color: var(--green);
+  color: var(--white);
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button:active,
+.button:hover {
+  background-color: var(--darkgreen);
+}
+
+.amount {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Fraunces", sans-serif;
+}
+
+.top-content {
+  letter-spacing: 5px;
+  font-size: small;
+  color: var(--darkgrey);
+  opacity: 70%;
+}
+
+.strikethrough-val {
+  text-decoration: line-through;
+  color: var(--mediumlightgrey);
+  font-family: "Montserrat", sans-serif;
+}
+
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.correct-val {
+  color: var(--green);
+}
+
+body {
+  background-color: var(--cream);
+}
+
+.card-container {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 344px;
+  height: 650px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+  }
+  .perfume-img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .full-content {
+    padding: 20px;
+    margin-right: 10px;
+  }
+  /* Other styles for larger screens go here */
+}
